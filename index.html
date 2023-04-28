@@ -1,0 +1,576 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/miestilo.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap');
+        </style>
+
+    </head>
+    <body>
+        <h5></h5>
+        <h1 id="Tit01"> ETIQUETAS EN HTML</h1>
+        <h5><em>Autor:</em> Juan Gabriel Salazar Romero</h5>
+        <h3 id="Contenido">Contenido</h3>
+
+        <section id="menu">
+            ETIQUETAS DE ESTRUCTURACIÓN <br>
+            <dd>
+                <a href="#cabecera">&lt;hi&gt; Cabecera</a><br>
+                <a href="#parrafo">&lt;p&gt; Párrafo</a><br>
+                <a href="#salto">&lt;br&gt; Salto de línea</a><br>
+                <a href="#seccion">&lt;section&gt; Sección</a><br>
+                <a href="#division">&lt;div&gt; División</a><br>
+            </dd>
+            ETIQUETAS DE FORMATO DE TEXTO<br>
+            <dd>
+                <a href="#code">&lt;code&gt; Código</a><br>
+                <a href="#negrita1">&lt;b&gt; Negrita</a><br>
+                <a href="#negrita2">&lt;strong&gt; Negrita</a><br>
+                <a href="#cursiva1">&lt;i&gt; Cursiva</a><br>
+                <a href="#cursiva2">&lt;em&gt; Cursiva</a><br>
+                <a href="#small">&lt;small&gt; Texto pequeño</a><br>
+                <a href="#sub">&lt;sub&gt; Subíndice</a><br>
+                <a href="#sup">&lt;sup&gt; Superíndice</a><br>
+            </dd>
+            ETIQUETAS DE LISTA <br>
+            <dd>
+                <a href="#ListUL">&lt;ul&gt; Listas no ordenadas</a><br>
+                <a href="#ListOL">&lt;ol&gt; Listas ordenadas</a><br>
+                <a href="#ListDL">&lt;dl&gt;Listas de definiciones</a><br>
+            </dd>
+            INSERCIÓN DE IMÁGENES Y VIDEOS <br>
+            <dd>
+                <a href="#img">&lt;img&gt;Imágenes</a><br>
+                <a href="#vidPropio">&lt;video&gt;Video Propio</a><br>
+                <a href="#vidEmb">&lt;video&gt;Video Embebido</a><br>
+            </dd>
+        </section>
+
+        <section id="estructuracion">
+            <h2>ETIQUETAS DE ESTRUCTURACIÓN</h2>
+
+            <div id="cabecera">
+                <h3>&lt;hi&gt; CABECERA </h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Se utilizan para definir la cabecera o título de una página o sección, y cuenta con 6 niveles de importancia o tamaños: h1, h2, h3, h4, h5 y h6. Nótese que se añade de forma automática un espacio antes y después de cada cabecera. Ejemplos:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>&lt;hi&gt;Cabecera hi&lt;/hi&gt;</code>, <br>
+                    donde: i = 1, 2, 3, 4, 5 o 6.
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <div id="resultado">
+                    <h1>Cabecera h1</h1>
+                    <h2 id="ejH2">Cabecera h2</h2>
+                    <h3 id="ejH3">Cabecera h3</h3>
+                    <h4>Cabecera h4</h4>
+                    <h5>Cabecera h5</h5>
+                    <h6>Cabecera h6</h6>
+                </div>
+            </div>
+
+            <div id="parrafo">
+                <h3>&lt;p&gt; PÁRRAFO</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Se utilizan para definir los párrafos en nuestro documento. Nótese que se añade de forma automática un espacio antes y después de cada párrafo. Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>&lt;p&gt;Párrafo 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero sed placeat autem debitis doloremque, similique aspernatur. Quasi, eveniet ullam.&lt;/p&gt;<br>
+                    &lt;p&gt;Párrafo 2: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, molestiae cupiditate! Consequuntur ad magni assumenda amet impedit dolorem, dolor provident quo eos! Corrupti, quis mollitia!&lt;/p&gt;
+                    </code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <div id="resultado" >
+                    <p>Párrafo 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero sed placeat autem debitis doloremque, similique aspernatur. Quasi, eveniet ullam.</p>
+                    <p>Párrafo 2: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, molestiae cupiditate! Consequuntur ad magni assumenda amet impedit dolorem, dolor provident quo eos! Corrupti, quis mollitia!</p>
+                </div>
+            </div>
+
+            <div id="salto">
+                <h3>&lt;br&gt; SALTO DE LÍNEA</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Se utiliza para comenzar una nueva línea de texto dentro un mismo párrafo. Nótese que en este caso no se necesita la etiqueta de cierre. Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, facilis!&lt;br&gt;  Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;br&gt;  Lorem ipsum dolor sit amet consectetur.</code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p id="resultado">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, facilis! <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur.
+                </p>
+            </div>
+
+            <div id="seccion">
+                <h3>&lt;section&gt; SECCIÓN</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Se utiliza para definir un bloque dentro el contenido, al cual se le podrá dar características diferentes al resto del texto.
+                </p>
+            </div>
+
+            <div id="division">
+                <h3>&lt;div&gt; DIVISIÓN</h3> <a href="#menu">Volver</a>
+                <p>
+                    Se utiliza para definir una división dentro el contenido, al cual se le podrá dar características diferentes al resto del texto. Es similar a la etiqueta &lt;section&gt;
+                </p>
+            </div>
+        </section>
+
+        <section id="formato">
+            <h2>ETIQUETAS DE FORMATO DE TEXTO</h2>
+
+            <div id="code">
+                <h3>&lt;code&gt; CÓDIGO</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta otorga al texto un estilo de fuente de ancho fijo, y se utiliza para mostrar funciones, código de programación o variables. Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>El siguiente texto está marcado como código: &lt;code&gt;System.out.println(¡Hola Mundo!)&lt;/code&gt;</code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p id="resultado">
+                    El siguiente texto está marcado como código: <code>System.out.println(¡Hola Mundo!)</code>
+                </p>
+            </div>
+
+            <div id="negrita1">
+                <h3>&lt;b&gt; NEGRITA</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta permite insertar texto en negrita. Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>El siguiente texto está en negrita: &lt;b&gt;Texto en negrita&lt;/b&gt;</code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p id="resultado">
+                    El siguiente texto está en negrita: <b>Texto en negrita</b>
+                </p>
+            </div>
+
+            <div id="negrita2">
+                <h3>&lt;strong&gt; NEGRITA</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta permite insertar texto en negrita. Es similar a la etiqueta &lt;b&gt;. Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>El siguiente texto está en negrita: &lt;strong&gt;Texto en negrita&lt;/strong&gt;</code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p id="resultado">
+                    El siguiente texto está en negrita: <strong>Texto en negrita</strong>
+                </p>
+            </div>
+
+            <div id="cursiva1">
+                <h3>&lt;i&gt; CURSIVA</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta permite insertar texto en cursiva. Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>El siguiente texto está en cursiva: &lt;i&gt;Texto en cursiva&lt;/i&gt;</code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p id="resultado">
+                    El siguiente texto está en cursiva: <i>Texto en cursiva</i>
+                </p>
+            </div>
+
+            <div id="cursiva2">
+                <h3>&lt;em&gt; CURSIVA</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta permite insertar texto en cursiva. Es similar a la etiqueta &lt;i&gt;. Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>El siguiente texto está en cursiva: &lt;em&gt;Texto en cursiva&lt;/em&gt;</code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p id="resultado">
+                    El siguiente texto está en cursiva: <em>Texto en cursiva</em>
+                </p>
+            </div>
+
+            <div id="small">
+                <h3>&lt;small&gt; TEXTO PEQUEÑO</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta permite insertar texto más pequeño. Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>El siguiente texto es más pequeño: &lt;small&gt;Texto más pequeño&lt;/small&gt;</code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p id="resultado">
+                    El siguiente texto es más pequeño: <small>Texto más pequeño</small>
+                </p>
+            </div>
+
+            <div id="sub">
+                <h3>&lt;sub&gt; SUBÍNDICE</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta permite insertar texto en subíndice, es especialmente útil en fórmulas químicas. Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>En H&lt;sub&gt;2&lt;/sub&gt;O el número 2 está en subíndice</code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p id="resultado">
+                    En H<sub>2</sub>O el número 2 está en subíndice
+                </p>
+            </div>
+
+            <div id="sup">
+                <h3>&lt;sup&gt; SUPERÍNDICE</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta permite insertar texto en superíndice, es especialmente útil en fórmulas matemáticas. Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>Los exponentes del siguiente polinomio están en superíndice, x&lt;sup&gt;4&lt;/sup&gt;+5x&lt;sup&gt;3&lt;/sup&gt;-3x&lt;sup&gt;2&lt;/sup&gt</code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p id="resultado">
+                    Los exponentes del siguiente polinomio están en superíndice, x<sup>4</sup>+5x<sup>3</sup>-3x<sup>2</sup>
+                </p>
+            </div>
+        </section>
+
+        <section id="listas">
+            <h2>ETIQUETAS DE LISTAS</h2>
+
+            <div id="ListUL">
+                <h3>&lt;ul&gt; LISTAS NO ORDENADAS</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Las listas no ordenadas se utilizan para nombrar elementos sin un orden especifico.
+                </p>
+                <p>
+                    Los atributos para definir esta lista son los siguientes:    
+                </p>
+                <dl>
+                    <dt>&lt;ul&gt;</dt>
+                    <dd>Para definir la lista</dd>
+                    <dt>&lt;li&gt;</dt>
+                    <dd>Para añadir un nuevo elemento</dd>
+                </dl>
+                <p>
+                    Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>&lt;ul&gt;Departamentos de Bolivia<br>
+                        &lt;li&gt;La Paz&lt;/li&gt;<br>
+                        &lt;li&gt;Cochabamba&lt;/li&gt;<br>
+                        &lt;li&gt;Santa Cruz&lt;/li&gt;<br>
+                        &lt;li&gt;Oruro&lt;/li&gt;<br>
+                        &lt;li&gt;Potosí&lt;/li&gt;<br>
+                        &lt;li&gt;Chuquisaca&lt;/li&gt;<br>
+                        &lt;li&gt;Tarija&lt;/li&gt;<br>
+                        &lt;li&gt;Beni&lt;/li&gt;<br>
+                        &lt;li&gt;Pando&lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                    </code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p>
+                    <ul id="resultado"> Departamentos de Bolivia:
+                        <li>La Paz</li>
+                        <li>Cochabamba</li>
+                        <li>Santa Cruz</li>
+                        <li>Oruro</li>
+                        <li>Potosí</li>
+                        <li>Chuquisaca</li>
+                        <li>Tarija</li>
+                        <li>Beni</li>
+                        <li>Pando</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div id="ListOL">
+                <h3>&lt;ol&gt; LISTAS ORDENADAS</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Las listas ordenadas se utilizan para nombrar elementos con un orden especifico.
+                </p>
+                <p>
+                    Los atributos para definir esta lista son los siguientes:    
+                </p>
+                <dl>
+                    <dt>&lt;ol&gt;</dt>
+                    <dd>Para definir la lista</dd>
+                    <dt>&lt;li&gt;</dt>
+                    <dd>Para añadir un nuevo elemento</dd>
+                </dl>
+                <p>
+                    Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>&lt;ol&gt;Pasos para lavarse las manos:<br>
+                        &lt;li&gt;Mojarse las manos.&lt;/li&gt;<br>
+                        &lt;li&gt;Cerrar el grifo y enjabonarse las manos.&lt;/li&gt;<br>
+                        &lt;li&gt;Frotarse las manos hasta hacer espuma.&lt;/li&gt;<br>
+                        &lt;li&gt;Restregarse las manos durante al menos 20 segundos.&lt;/li&gt;<br>
+                        &lt;li&gt;Enjuagarse bien las manos.&lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p>
+                    <ol id="resultado"> Pasos para lavarse las manos:
+                        <li>Mojarse las manos.</li>
+                        <li>Cerrar el grifo y enjabonarse las manos.</li>
+                        <li>Frotarse las manos hasta hacer espuma.</li>
+                        <li>Restregarse las manos durante al menos 20 segundos.</li>
+                        <li>Enjuagarse bien las manos.</li>
+                    </ol>
+                </p>
+            </div>
+
+            <div id="ListDL">
+                <h3>&lt;dl&gt; LISTAS DE DEFINICIONES</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Las listas de definiciones se utilizan cuando queremos mostrar un glosario de términos o conceptos.
+                </p>
+                <p>
+                    Los atributos para definir esta lista son los siguientes:    
+                </p>
+                <dl>
+                    <dt>&lt;dl&gt;</dt>
+                    <dd>Para definir la lista</dd>
+                    <dt>&lt;dt&gt;</dt>
+                    <dd>Para añadir un nuevo término</dd>
+                    <dt>&lt;dd&gt;</dt>
+                    <dd>Para añadir la definición del término</dd>
+                </dl>
+                <p>
+                    Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>&lt;dl&gt;Comandos en Word:<br>
+                        &lt;dt&gt;Ctrl+O&lt;/dt&gt;<br>
+                        &lt;dd&gt;Abre un documentos.&lt;/dd&gt;<br>
+                        &lt;dt&gt;CtrlC&lt;/dt&gt;<br>
+                        &lt;dd&gt;Copia el texto seleccionado.&lt;/dd&gt;<br>
+                        &lt;dt&gt;Ctrl+X&lt;/dt&gt;<br>
+                        &lt;dd&gt;Corta el texto seleccionado.&lt;/dd&gt;<br>
+                        &lt;dt&gt;Ctrl+V&lt;/dt&gt;<br>
+                        &lt;dd&gt;Pega el texto previamente copiado o cortado.&lt;/dd&gt;<br>
+                        &lt;/dl&gt;
+                    </code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <p>
+                    <dl id="resultado">Comandos en Word:
+                        <dt>Ctrl+O</dt>
+                        <dd>Abre un documento.</dd>
+                        <dt>Ctrl+C</dt>
+                        <dd>Copia el texto seleccionado.</dd>
+                        <dt>Ctrl+X</dt>
+                        <dd>Corta el texto seleccionado.</dd>
+                        <dt>Ctrl+V</dt>
+                        <dd>Pega el texto previamente copiado o cortado.</dd>
+                    </dl>
+                </p>
+            </div>
+        </section>
+
+        <section id="img-vid">
+            <h2>INSERCIÓN DE IMÁGENES Y VIDEOS</h2>
+
+            <div id="img">
+                <h3>&lt;img&gt; IMÁGENES</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta permite insertar imágenes.
+                </p>
+                <p>
+                    Los atributos que se utilizan son los siguientes:    
+                </p>
+                <dl>
+                    <dt>&lt;img&gt;</dt>
+                    <dd>Para indicar la inserción de la imagen.</dd>
+                    <dt>src</dt>
+                    <dd>Para definir la ubicación de la imagen a insertar.</dd>
+                    <dt>width</dt>
+                    <dd>Para definir el ancho de la imagen en pixeles (px).</dd>
+                    <dt>alt</dt>
+                    <dd>Para mostrar un texto en caso de que la imagen no se muestre por algún motivo o error.</dd>
+                </dl>
+                <p>
+                    Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>&lt;img src="img/logo.png" width="100px" alt"Error en la imagen"&gt;<br>
+                        &lt;img src="img/logo.png" width="50px" alt"Error en la imagen"&gt;
+                    </code>
+                </p>
+                <p>
+                    Resultado:
+                </p >
+                <div id="resultado">
+                    <img src="img/logo.png" width="100px" alt="Error en la imagen">
+                    <img src="img/logo.png" width="50px" alt="Error en la imagen">
+                </div>
+            </div>
+            
+            <div id="vidPropio">
+                <h3>&lt;video&gt; VIDEO PROPIO</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta permite insertar un video guardado en nuestra computadora.
+                </p>
+                <p>
+                    Los atributos que se utilizan son los siguientes:    
+                </p>
+                <dl>
+                    <dt>&lt;video&gt;</dt>
+                    <dd>Para indicar la inserción del video.</dd>
+                    <dt>width</dt>
+                    <dd>Para definir el ancho del video.</dd>
+                    <dt>height</dt>
+                    <dd>Para definir el alto del video.</dd>
+                    <dt>poster</dt>
+                    <dd>Para definir la ubicación de una imagen que se muestre mientras el video no sea reproducido.</dd>
+                    <dt>controls</dt>
+                    <dd>Añade los botones de control de reproducción del video.</dd>
+                    <dt>&lt;source&gt;</dt>
+                    <dd>Para definir el origen del video.</dd>
+                    <dt>src</dt>
+                    <dd>Para definir la ubicación del video a insertar.</dd>
+                    <dt>type</dt>
+                    <dd>Para definir el formato del video</dd>
+                </dl>
+                <p>
+                    Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>&lt;video width="720" height="480" poster="img/video propio.png" controls&gt; &lt;source       src="img/Video1.mp4" type="video/mp4"&gt; Ha ocurrido un error al mostrar el video, su navegador no es compatible. &lt;/video&gt;
+                    </code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <div id="resultado">
+                    <video width="480" height="320" poster="img/video propio.png" controls> <source src="img/Video1.mp4" type="video/mp4"> 
+                    Ha ocurrido un error al mostrar el video, su navegador no es compatible.
+                    </video>
+                </div>            
+            </div>
+
+            <div id="vidEmb">
+                <h3>&lt;video&gt; VIDEO EMBEBIDO</h3> <a id="Volver" href="#menu">Volver</a>
+                <p>
+                    Esta etiqueta permite insertar un video alojado en una página web externa, evitando tener que descargarlo.
+                </p>
+                <p>
+                    Los atributos que se utilizan son los siguientes:    
+                </p>
+                <dl>
+                    <dt>&lt;iframe&gt;</dt>
+                    <dd>Para indicar la inserción de un video embebido.</dd>
+                    <dt>width</dt>
+                    <dd>Para definir el ancho del video.</dd>
+                    <dt>height</dt>
+                    <dd>Para definir el alto del video.</dd>
+                    <dt>src</dt>
+                    <dd>Para definir la ubicación web del video a insertar.</dd>
+                    <dt>title</dt>
+                    <dd>Para definir el título del video.</dd>
+                    <dt>frameborder</dt>
+                    <dd>Para dar un borde al video.</dd>
+                    <dt>allow</dt>
+                    <dd>Para otorgar permisos adicionales.</dd>
+                    <dt>allowfullscreen</dt>
+                    <dd>Para permitir la reproducción en pantalla completa.</dd>
+                </dl>
+                <p>
+                    Ejemplo:
+                </p>
+                <p>
+                    Código:
+                </p>
+                <p id="codigo">
+                    <code>&lt;iframe width="480" height="320" src="https://www.youtube.com/embed/QHAB3UvgBI8"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt; &lt;/iframe&gt;
+                    </code>
+                </p>
+                <p>
+                    Resultado:
+                </p>
+                <div id="resultado">
+                    <iframe width="480" height="320" src="https://www.youtube.com/embed/QHAB3UvgBI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+                </div>          
+            </div>
+
+        </section>
+
+    </body>
+</html>
